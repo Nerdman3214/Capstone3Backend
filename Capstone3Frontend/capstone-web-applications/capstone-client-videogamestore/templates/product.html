@@ -1,0 +1,19 @@
+{{#products}}
+<div class="product">
+  <h4>{{name}}</h4>
+
+  <div class="photo">
+    <img src="/images/products/{{imageUrl}}" alt=""
+         onclick="showImageDetailForm(`{{name}}`,'/images/products/{{imageUrl}}')">
+  </div>
+
+  <div>
+    <p>{{description}}</p>
+  </div>
+
+  <div class="meta">
+    <h4 class="price">${{price}}</h4>
+<button class="btn btn-success add-to-cart" data-product-id="{{productId}}">Add to Cart</button>
+  </div>
+</div>
+{{/products}}
